@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LauchimageCustomVC">
+            <connections>
+                <outlet property="btn" destination="34h-nK-uqD" id="8m9-fi-NhN"/>
+                <outlet property="home1" destination="f7h-Z2-uCc" id="i7X-uY-hsF"/>
+                <outlet property="home2" destination="thg-mn-IQc" id="kx0-vv-a9y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home1" translatesAutoresizingMaskIntoConstraints="NO" id="f7h-Z2-uCc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34h-nK-uqD">
+                    <rect key="frame" x="230" y="528" width="85" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="HgK-JY-SzE"/>
+                        <constraint firstAttribute="height" constant="30" id="r1W-VL-bDl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="跳过 3">
+                        <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="openClick:" destination="-1" eventType="touchUpInside" id="KLF-P7-B0U"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home2" translatesAutoresizingMaskIntoConstraints="NO" id="thg-mn-IQc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f7h-Z2-uCc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0jE-r5-rAY"/>
+                <constraint firstItem="thg-mn-IQc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="21L-f0-Kvm"/>
+                <constraint firstItem="f7h-Z2-uCc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8DU-Uv-6Xq"/>
+                <constraint firstAttribute="trailing" secondItem="34h-nK-uqD" secondAttribute="trailing" constant="5" id="AYU-x1-YWP"/>
+                <constraint firstItem="thg-mn-IQc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JrP-bj-Ssr"/>
+                <constraint firstAttribute="bottom" secondItem="f7h-Z2-uCc" secondAttribute="bottom" id="S2H-in-Drb"/>
+                <constraint firstAttribute="trailing" secondItem="f7h-Z2-uCc" secondAttribute="trailing" id="XpJ-4q-afL"/>
+                <constraint firstAttribute="bottom" secondItem="34h-nK-uqD" secondAttribute="bottom" constant="10" id="eze-ZV-QS3"/>
+                <constraint firstAttribute="bottom" secondItem="thg-mn-IQc" secondAttribute="bottom" id="jAD-s8-yGQ"/>
+                <constraint firstAttribute="trailing" secondItem="thg-mn-IQc" secondAttribute="trailing" id="mwZ-ib-1sO"/>
+            </constraints>
+            <point key="canvasLocation" x="-96" y="29"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home1" width="1080" height="1689"/>
+        <image name="home2" width="1080" height="1689"/>
+    </resources>
+</document>

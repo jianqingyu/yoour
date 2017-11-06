@@ -1,0 +1,6 @@
+framework module Pods_MillenniumStarERPUITests {
+  umbrella header "Pods-MillenniumStarERPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
